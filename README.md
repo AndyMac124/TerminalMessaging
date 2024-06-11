@@ -1,20 +1,11 @@
-# <p style="text-align:center"> COSC340 A4 </p>
+# <p style="text-align:center"> Terminal Based Messaging System </p>
 
-### <p style="text-align:center"> By Andrew McKenzie (#220263507) </p>
+### <p style="text-align:center"> By Andrew McKenzie </p>
 
 ### Outline:
 This is a basic terminal based network messaging system where users can leave messages for other users 
 and read messages intended for themselves. The client and server are written in Java with corresponding shell 
 script for each.
-***
-### Permissions:
-Permissions for all files have been set to allow all users to read, write, and execute. However, when transferring the files
-to Turing with FileZilla I lost those permissions. So if permission is denied, please copy and paste these into your CLI.
-
-- chmod +x startClient.sh
-- chmod +x startServer.sh
-- chmod +x Client.java
-- chmod +x Server.java
 
 ***
 ### Running the program:
@@ -73,5 +64,5 @@ private void addMessage(String recipient, String sender, String message) {
 
 There are two key security measures:
 1. All passwords salted and hashed with SHA-256.
-2. All messages a sent between client and server with an AES encryption algorithm (the key is initially passed to the client with the clients public RSA key).
+2. All messages are sent between client and server with an AES encryption algorithm (the key is initially passed to the client with the clients public RSA key).
 
