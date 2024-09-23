@@ -16,15 +16,6 @@ import java.util.Base64;
 import java.util.Objects;
 import java.util.regex.*;
 
-/*
-REFERENCES FOR ENCRYPTION METHODS
-AES Encryption methods are based off the following:
-https://www.baeldung.com/java-aes-encryption-decryption
-RSA Encryption methods are based off the following:
-https://www.baeldung.com/java-rsa
-SHA-256 hashing is based off the following:
-https://www.geeksforgeeks.org/sha-256-hash-in-java/
- */
 /**
  * Server Class
  * Opens a server socket for a client to connect to.
